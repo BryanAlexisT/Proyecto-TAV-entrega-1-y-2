@@ -31,6 +31,37 @@ body{
     height: 100%;
 }
 
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: var(--degradado);
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+
+
+.logo{
+    width: 100%;
+    height: 100%;
+}
+
 .TOP{
     position: fixed;
     top: 0;
@@ -43,15 +74,6 @@ body{
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-}
-
-.TOP .logo{
-    font-size: 2rem;
-    color: var(--blanco);
-}
-
-.TOP .logo span{
-    color: var(--blanco);
 }
 
 .TOP .navbar a{
@@ -74,6 +96,47 @@ body{
     visibility: hidden;
     opacity: 0;   
 }
+
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/fondo\ index.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.inicio .image img{
+    width: 40vw;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem)
+    }
+    50%{
+        transform: translateY(-3.5rem);
+    }
+}
+
+.inicio .content h3{
+    font-size: 5.5rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+.inicio .content h3 span{
+    color: var(--verde);
+    text-transform: uppercase;
+}
+.inicio .content p{
+    font-size: 1.7rem;
+    color: darkcyan;
+    padding: 1rem 0;
+}
+
+
+
 
 @media(max-width:1200px){
     html{
@@ -99,6 +162,8 @@ body{
         transform-origin: top;
         transform: scaleY(0);
         opacity: 0;    
+        transition: .2s linear;
+
     }
 
     .TOP .navbar a{
@@ -113,6 +178,22 @@ body{
     }
     .TOP input:checked ~ label::before{
         content: '\f00d';
+    }
+
+    .inicio{
+        flex-flow: column-reverse;
+    }
+
+    .inicio .image img{
+        width: 100%;
+    }
+
+    .inicio .content h3{
+        font-size: 3.6rem;
+    }
+
+    .inicio .content p{
+        font-size: 1.5rem;
     }
 
 }
