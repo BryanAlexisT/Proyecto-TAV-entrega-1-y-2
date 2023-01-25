@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    /* background-image: url(../img/iconos-patitas/kisspng-dog-cat-animal-track-paw-clip-art-animal-footprints-cliparts-5a7957d077feb4.3199828715179017764915.png); */
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.navbar-toggler{
+    width: 240px;
+    height: 40px;
+    font-size: 18px;
+    color: success;
+    color: #000;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px !important;
+    
+}
+
+#navbar-toggler{
+    margin-left: 50%;
+}
+/* document.getElementById("elemento").style.display = hide(); */
+
+
+/*CREACION DE CSS IMAGENES*/
+
+#d-block {
+    width: 100%;
+	height: 40%;
+    
+
+}
+/* ---------------------------  NAVBAR    ---------------------------------------- */
+.text-vab{
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+#menu a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+
+}
+#menu button {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.carousel-inner {
+    max-height: 10rem;
+	/*width: 100%;
+	height: 500px;*/
+    font-size: 18px;
+}
+
+h5{
+    font-style: italic;
+    color: aqua;
+    
+}
+
+
+@media (max-width:768px){
+    #intro{
+        width: 90% !important;
+    }
+    .servicio-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+@media (max-width:768px){
+
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
+
+
+
+/*---------------- PANTALLA PEQUEÑA-------------------*/
+@media (max-width: 768px){
+    #intro {
+        width: 90% !important;
+    }
+    .servicio-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+
+/*--------------------  SERVICIOS  ----------------------*/
+
+
+
+
+
+
+
+
+/* ------------------  Pantalla entra chica ----------------------- */
+
+@media(max-width: 576px){
+
+    .icono-wrap{
+        flex-wrap:wrap;
+        justify-content: center !important;
+    }
+}
+
+
+#h3-datos{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
