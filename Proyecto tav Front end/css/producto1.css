@@ -166,11 +166,6 @@ body{
     padding-top: 80px;
 }
 
-.logo{
-    width: 100%;
-    height: 100%;
-}
-
 
 .TOP{
     position: fixed;
@@ -222,6 +217,59 @@ h1 {
     width: 45px;
     height: auto;
 }
+
+.pushbar{
+    width: 365px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.pushbar .btn_cerrar {
+    text-align: left;
+}
+
+.pushbar .btn_cerrar button{
+    background: none;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 4rem;
+}
+
+.pushbar .titulo{
+    font-size: 22px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(112,112, 112, .60);
+    margin-bottom: 20px;
+}
+
+.pushbar .item{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(112,112, 112, .60);
+}
+.pushbar .item img{
+    width: 100%;
+    max-width: 80px;
+}
+
+.pushbar .textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.pushbar .textos .nombre-item{
+    color: #aaaaaa;
+}
+
+.pushbar .total{
+    margin: 40px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .contenedor {
     display: flex;
@@ -292,4 +340,73 @@ h1 {
 
 .informacion button:hover {
     background-color: #1e9400;
+}
+
+
+
+
+
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+    .TOP label{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .TOP .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #FFFFFF;
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);   
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;    
+        transition: .2s linear;
+
+    }
+
+    .TOP .navbar a{
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    .TOP input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .TOP input:checked ~ label::before{
+        content: '\f00d';
+    }
+
+    .inicio{
+        flex-flow: column-reverse;
+    }
+
+    .inicio .image img{
+        width: 100%;
+    }
+
+    .inicio .content h3{
+        font-size: 3.6rem;
+    }
+
+    .inicio .content p{
+        font-size: 1.5rem;
+    }
+
+}
+@media(max-width:450px){
+    html{
+        font-size: 49%;
+    }
 }
