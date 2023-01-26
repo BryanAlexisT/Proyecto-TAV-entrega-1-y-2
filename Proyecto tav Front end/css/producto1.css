@@ -161,11 +161,6 @@ html{
     overflow: scroll;
 }
 
-body{
-    background: #bff8a8;
-    padding-top: 80px;
-}
-
 
 .TOP{
     position: fixed;
@@ -222,7 +217,9 @@ h1 {
     width: 365px;
     font-size: 18px;
     font-weight: 300;
+    padding: 2rem ;
 }
+
 .pushbar .btn_cerrar {
     text-align: left;
 }
@@ -278,7 +275,7 @@ h1 {
     gap: 50px;
     margin-bottom: 20px;
     min-height: 100vh;
-    padding: 0 9%;
+    padding: 0 5%;
     padding-top: 10rem;
     padding-bottom: 2rem;
 }
