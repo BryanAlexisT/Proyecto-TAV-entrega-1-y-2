@@ -1,4 +1,5 @@
--<!DOCTYPE html>
+-
+<!DOCTYPE html>
 <html lang="en">
 
 
@@ -23,27 +24,27 @@
 </head>
 
 <body>
-      <!-- Page Loader -->
-      <div id="loader-wrapper">
-        <div id="loader"></div>
+  <!-- Page Loader -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
 
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
 
-    </div>
+  </div>
 
   <header class="TOP">
     <a class="logo" href="/index.html">
-      <img src="/img/tumascotita.jfif" alt="Logo" style="width:40px;">
+      <img src="/img/tumascotita.jfif" alt="Logo" style="width:100%px; height: 40px;">
     </a>
     <input type="checkbox" id="menu-bar">
     <label for="menu-bar" class="fa fa-bars"></label>
     <nav class="navbar">
-
-
-      <a href="/login.html">Iniciar Sesión</a>
-      <a href="Contacto">Contacto</a>
-      <a href="#info">Nosotros</a>
+      <div>
+        <a href="/login.html">Iniciar Sesión</a>
+        <a href="#info">Nosotros</a>
+        <a href="/contacto.html">Contacto</a>
+      </div>
     </nav>
   </header>
 
@@ -78,9 +79,9 @@
 
   <script src="/js/Loader.js"></script>
   <script>
-      $(window).on("load", function() {
-          $('body').addClass('loaded');
-      });
+    $(window).on("load", function () {
+      $('body').addClass('loaded');
+    });
   </script>
 
 </body>

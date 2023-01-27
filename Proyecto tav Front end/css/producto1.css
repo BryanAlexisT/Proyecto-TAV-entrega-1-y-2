@@ -298,6 +298,7 @@ h1 {
     border-radius: 20px 20px 0px 0px;
 }
 
+
 .informacion {
     height: 150px;
     display: flex;
@@ -307,21 +308,19 @@ h1 {
     gap: 15px;
 }
 
+
 .informacion>p:first-child {
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
+    
 }
 
 .informacion .precio {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 500;
 }
 
-.informacion .precio span {
-    font-size: 17px;
-    font-weight: 300;
-}
 
 .informacion button {
     background-color: #026902;
@@ -338,9 +337,6 @@ h1 {
 .informacion button:hover {
     background-color: #1e9400;
 }
-
-
-
 
 
 @media(max-width:1200px){

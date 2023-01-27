@@ -1,5 +1,3 @@
-
-
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -154,7 +152,6 @@
     outline: none;
     border: none;
     text-transform: capitalize;
-    color: white;
 }
 
 html{
@@ -164,8 +161,33 @@ html{
 
 body{
     background: #bff8a8;
-    padding-top: 40px;
 }
+
+
+.inicio{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+
+.boton{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: var(--verde);
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
 
 
 
@@ -204,21 +226,23 @@ body{
     opacity: 0;   
 }
 
-#parrafo .siu{
+#parrafo .siu {
     font-weight: bold;
+    font-size: 3rem;
 }
 
-#informacion img{
+#informacion img {
     border-radius: 3rem;
     box-shadow: 0 .5rem 1rem black;
 }
 
-#bir {
-    background-color: rgba(230, 240, 232, 0.87);
-    position: relative;
-    margin-top: -10px;
-    z-index: 2;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+#informacion h3{
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+#parrafo{
+    margin-top: 5rem;
 }
 
 #fashion {
@@ -246,27 +270,9 @@ p {
     color: rgba(0, 0, 0, 0.5);
 }
 
-#mb-3 {
 
-    color: rgba(0, 0, 0, 0.5)
-}
 
-#check {
-    color: rgba(0, 0, 0, 0.5)
-}
 
-#mainSlider {
-    width: 100vw;
-    max-width: 2060px;
-    min-width: 320px;
-    margin: auto;
-}
-
-#operadora {
-    width: 100%;
-    border-radius: 20px;
-    object-fit: cover;
-}
 
 
 /* PPP{
@@ -283,16 +289,6 @@ p {
 /* #galeria .col-lg-4 {
     margin: 0 !important;
     padding: 50px;
-} */
-#galeria img {
-    width: 100%;
-    height: 250px;
-
-}
-
-#galeria img:hover {
-    border: 5px solid #f7f7f7;
-}
 
 
 
@@ -300,13 +296,13 @@ p {
 /* -------------------------------   REGISTRO   -------------------------------------- */
 
 
-@media(max-width:1200px){
-    html{
+@media(max-width:1200px) {
+    html {
         font-size: 55%;
     }
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
     .TOP label{
         visibility: visible;
         opacity: 1;
@@ -342,25 +338,20 @@ p {
         content: '\f00d';
     }
 
-    .inicio{
-        flex-flow: column-reverse;
-    }
 
-    .inicio .image img{
-        width: 100%;
-    }
-
-    .inicio .content h3{
-        font-size: 3.6rem;
-    }
-
-    .inicio .content p{
-        font-size: 1.5rem;
-    }
 
 }
-@media(max-width:450px){
-    html{
+
+@media(max-width: 576px) {
+
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
+@media(max-width:450px) {
+    html {
         font-size: 49%;
     }
 }
